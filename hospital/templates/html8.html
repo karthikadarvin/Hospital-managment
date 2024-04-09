@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <h2>login here...</h2>
+  {%load static%}
+</head>
+<body>
+<img src="{% static 'images\waterfalls.jpg'%}">
+<form action="./10" method="post">
+  {% csrf_token %}
+  <label>username:</label>
+  <input type="text" name="uname"><br><br>
+  <label>password:</label>
+  <input type="password" name="password"><br><br>
+  <label>gender :</label>
+  <label>male</label>
+  <input type="radio" name="gender" required value="male">
+  <label>female</label>
+  <input type="radio" name="gender" required value="female"><br><br>
+  <input type="submit" value="submit">
+</form>
+
+</body>
+</html>
